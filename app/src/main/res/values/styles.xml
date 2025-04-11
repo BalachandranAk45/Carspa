@@ -1,0 +1,9 @@
+<resources>
+    <!-- Existing styles can stay here -->
+
+    <style name="CustomHintStyle" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">#333</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

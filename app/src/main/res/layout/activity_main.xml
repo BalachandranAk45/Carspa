@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Fragment container to load different sections -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_container" />
+
+    <!-- Button Container (Horizontal layout) -->
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/add_sale_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Add Sale"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/red"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawablePadding="8dp"
+            android:textStyle="bold"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/add_invoice_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawablePadding="8dp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Bottom Navigation Menu -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu"/>
+</RelativeLayout>

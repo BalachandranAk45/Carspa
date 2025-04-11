@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "148104501469",
+    "firebase_url": "https://thanjavur-darshan.firebaseio.com",
+    "project_id": "thanjavur-darshan",
+    "storage_bucket": "thanjavur-darshan.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148104501469:android:0dfc7870dc245385dde334",
+        "android_client_info": {
+          "package_name": "com.example.carspa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW7kpYnzxYcnga09IVij7m9USAG6NlEjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
